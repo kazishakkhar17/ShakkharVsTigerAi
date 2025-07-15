@@ -8,7 +8,7 @@ import tensorflow as tf
 # Load your trained model (make sure the model file is in the same folder)
 model = tf.keras.models.load_model('tiger_shakkhar_model.keras')
 
-classes = ['NM (Tiger)', 'ML (Shakkhar)']
+classes = ['Shakkhar', 'Tiger']
 
 # Public image URLs (replace with your actual image URLs)
 TIGER_IMAGE_URL = "https://t4.ftcdn.net/jpg/05/71/21/43/360_F_571214391_jnT6Rsg2M7VtsOs0MF4i1VFKAqWlHI47.jpg"
@@ -63,7 +63,7 @@ uploaded_file = st.file_uploader("Upload an image", type=['png', 'jpg', 'jpeg'])
 
 if uploaded_file is not None:
     # Show uploaded image preview
-    uploaded_img = Image.open(uploaded_file)
+    uploaded_img = Image.open(uploaded_file).convert("RGB")  # <== FIXED here
     uploaded_img_square = uploaded_img.resize((250, 250))
 
     # Convert uploaded image for model prediction
@@ -80,14 +80,14 @@ if uploaded_file is not None:
     st.write(f"### Confidence: **{confidence:.2f}**")
 
     # Load related image from URL and resize for square box
-    related_img_url = TIGER_IMAGE_URL if label.startswith('NM') else SHAKKHAR_IMAGE_URL
+    related_img_url = TIGER_IMAGE_URL if label.startswith('Tiger') else SHAKKHAR_IMAGE_URL
     related_img = Image.open(urlopen(related_img_url)).resize((250, 250))
 
     # Display both images side by side with styling
     st.markdown('<div class="image-container">', unsafe_allow_html=True)
 
-    st.image(uploaded_img_square, caption="Uploaded Image", use_column_width=False, width=250)
-    st.image(related_img, caption=label.split(' ')[1], use_column_width=False, width=250)
+    st.image(uploaded_img_square, caption="Uploaded Image", width=250)
+    st.image(related_img, caption=label, width=250)
 
     st.markdown('</div>', unsafe_allow_html=True)
 else:
