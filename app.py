@@ -12,7 +12,7 @@ classes = ['Shakkhar', 'Tiger']
 
 # Public image URLs (replace with your actual image URLs)
 TIGER_IMAGE_URL = "https://t4.ftcdn.net/jpg/05/71/21/43/360_F_571214391_jnT6Rsg2M7VtsOs0MF4i1VFKAqWlHI47.jpg"
-SHAKKHAR_IMAGE_URL = "https://scontent.frjh4-1.fna.fbcdn.net/v/t39.30808-1/471496368_1803695170458604_1398081511664333487_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFYcYQWsEwneG0RwlOrpsoSIbCslynZu_AhsKyXKdm78BJ_WnpX-4plrgzrSSbSKmVpYrYGIe16qDkBAdFI63XD&_nc_ohc=9UnEL6DLIy4Q7kNvwETz2GP&_nc_oc=Adn-FnAfbFNHOANE5-eqA31RzxyRbds2YCUe10yeXVYoTdvNjlTcX5yGHL28O76uc2E&_nc_zt=24&_nc_ht=scontent.frjh4-1.fna&_nc_gid=F2IcUAAP9gFdqLyjAoS1bQ&oh=00_AfTVtDBLIn0mOzGMVoIOutyTb6BC6h46WRSRHF6a-gvP3Q&oe=687C437E"
+SHAKKHAR_IMAGE_URL = "https://scontent.frjh4-1.fna.fbcdn.net/v/t39.30808-1/471496368_1803695170458604_1398081511664333487_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFYcYQWsEwneG0RwlOrpsoSIbCslynZu_AhsKyXKdm78BJ_WnpX-4plrgzrSSbSKmVpYrYGIe16qDkBAdFI63XD&_nc_ohc=rjtoCnrOUAYQ7kNvwGjN1rv&_nc_oc=AdlfsXhyQpwiZaNz9T8ybtBxIMGJZo_DEKU1ES7x8udqS4fjC9tDIurKELo1_op31ok&_nc_zt=24&_nc_ht=scontent.frjh4-1.fna&_nc_gid=EPyWV-Fw6nBHGOv8G9JYAg&oh=00_AfRA1rbi84cXaQwxCHnHWSgGSq5yX_WOgBDTga87BK3bhg&oe=6887B07E"
 
 # --- Custom CSS for styling ---
 st.markdown("""
